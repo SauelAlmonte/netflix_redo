@@ -6,21 +6,24 @@ import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 const Row = ({ title, fetchURL }) => {
   const [movies, setMovies] = useState([]);
 
+  //   API
   useEffect(() => {
     axios.get(fetchURL).then((response) => {
       setMovies(response.data.results);
     });
   }, [fetchURL]);
 
+  //   Scroll Left & Right Start
   const slideLeft = () => {
-    let slider = document.getElementById("slider");
+    const slider = document.getElementById("slider");
     slider.scrollLeft = slider.scrollLeft - 500;
   };
 
   const slideRight = () => {
-    let slider = document.getElementById("slider");
+    const slider = document.getElementById("slider");
     slider.scrollLeft = slider.scrollLeft + 500;
   };
+  //   Scroll Left & Right Ends
 
   return (
     <>
