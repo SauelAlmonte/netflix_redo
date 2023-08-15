@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const LogIn = () => {
   return (
@@ -43,7 +43,9 @@ const LogIn = () => {
                       Subscribed to Netflix?
                     </span>
                     {""}
-                    <Link to="/signup" className="underline hover:font-bold">Sign Up</Link>
+                    <Link to="/signup" className="underline hover:font-bold">
+                      Sign Up
+                    </Link>
                   </p>
                 </form>
               </div>
@@ -53,6 +55,6 @@ const LogIn = () => {
       </div>
     </>
   );
-}
+};
 
-export default LogIn
+export default LogIn;
